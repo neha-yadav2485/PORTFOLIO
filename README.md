@@ -89,14 +89,14 @@ portfolio/
 │── index.html
 │── style.css
 │── script.js
-│── assets/
-│   ├── home.png
-│   ├── about.png
-│   ├── skills.png
-│   ├── projects.png
-│   ├── experience.png
-│   ├── education.png
-│   ├── contact.png
+│── Preview/
+│   ├── 1.HomePage.png
+│   ├── 2.AboutMe.png
+│   ├── 3.Skills.png
+│   ├── 4.Projects.png
+│   ├── 5.Experience.png
+│   ├── 6.Education.png
+│   ├── 7.ContactMe.png
 ```
 
 ---
