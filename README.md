@@ -47,6 +47,7 @@
 ### 📊 Experience
 
 ![Experience](Preview/5.Experience.png)
+![Experience](Preview/Experience.png)
 
 ---
 
