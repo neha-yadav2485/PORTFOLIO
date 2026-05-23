@@ -1,538 +1,927 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Neha Yadav — Frontend Developer</title>
-<link rel="icon" type="image/png" href="Logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
- 
-<!-- NAV -->
-<nav>
-  <div class="nav-logo">NY.</div>
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#contact" class="nav-cta">Contact Me</a></li>
-  </ul>
-</nav>
- 
-<div class="snap-container" id="snapContainer">
- 
-  <!-- ══ HOME ══ -->
-  <section class="snap-section" id="home">
-    <div class="hero-bg"></div>
-    <svg class="hero-wave" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 300 Q200 100 400 300 Q600 500 800 300" stroke="url(#grad1)" stroke-width="1.5" fill="none" opacity="0.6"/>
-      <path d="M0 350 Q200 150 400 350 Q600 550 800 350" stroke="url(#grad1)" stroke-width="1" fill="none" opacity="0.4"/>
-      <path d="M0 400 Q200 200 400 400 Q600 600 800 400" stroke="url(#grad1)" stroke-width="0.8" fill="none" opacity="0.3"/>
-      <path d="M0 250 Q200 50 400 250 Q600 450 800 250" stroke="url(#grad2)" stroke-width="1.2" fill="none" opacity="0.5"/>
-      <defs>
-        <linearGradient id="grad1" x1="0" y1="0" x2="800" y2="0">
-          <stop offset="0%" stop-color="#a855f7"/>
-          <stop offset="100%" stop-color="#ec4899"/>
-        </linearGradient>
-        <linearGradient id="grad2" x1="0" y1="0" x2="800" y2="0">
-          <stop offset="0%" stop-color="#38bdf8"/>
-          <stop offset="100%" stop-color="#a855f7"/>
-        </linearGradient>
-      </defs>
-    </svg>
- 
-    <div class="hero-inner">
-      <div>
-        <div class="badge animate">Available for Internships</div>
-        <h1 class="hero-greeting animate delay-1">Hello, I'm<br><span>Neha Yadav</span></h1>
-        <div class="hero-roles animate delay-2">
-          <div class="hero-role">Frontend Developer</div>
-          <div class="hero-role">Full Stack Enthusiast</div>
-          <div class="hero-role">Tech Club Coordinator</div>
-        </div>
-        <p class="hero-desc animate delay-3">B.Tech CSE student at DIT University building clean, responsive, user-friendly web interfaces with HTML, CSS, JavaScript and growing into full-stack development.</p>
-        <div class="hero-btns animate delay-4">
-          <!-- ✏️ CHANGE 1: Download Resume fixed — update "Neha_Yadav_Resume.pdf" to your actual file name -->
-          <a href="Neha_Yadav_Resume...pdf" download="Neha_Yadav_Resume...pdf" class="btn-primary">
-            ⬇ Download Resume
-          </a>
-          <a href="#contact" class="btn-outline">Get In Touch</a>
-        </div>
-      </div>
- 
-      <div class="hero-photo-area animate delay-2">
-        <div class="hero-photo-glow"></div>
-        <div class="hero-photo-frame">
-          <!-- ✏️ TO ADD YOUR PHOTO -->
-          <img src="portfolio_image.png" alt="Neha Yadav" class="hero-photo">
-        </div>
-      </div>
-    </div>
-  </section>
- 
-  <!-- ══ ABOUT (REDESIGNED) ══ -->
-  <section class="snap-section" id="about">
-    <div class="section-inner">
-      <div class="section-label">01 — Who I Am</div>
-      <div class="section-title" style="font-family:'Syne',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-0.03em;margin-bottom:0.3rem;">
-        Who I <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Am</span>
-      </div>
-      <p style="color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem;max-width:520px;">A driven developer focused on building intuitive, high-performance web experiences with clean code and <a href="#projects" style="color:var(--accent);text-decoration:none;">great user experience</a>.</p>
-      <div class="about-divider"></div>
- 
-      <div class="about-layout">
-        <!-- LEFT -->
-        <div class="about-left">
-          <p>I'm a B.Tech Computer Science student with a strong interest in <strong>Frontend Development</strong> and problem-solving through <strong style="color:var(--accent);">C Programming</strong> and <strong style="color:var(--accent);">DSA</strong>. I enjoy creating clean, responsive, and <strong style="color:var(--accent3);">user-friendly</strong> web interfaces.</p>
- 
-          <div class="about-features-list">
-            <div class="about-feature-row">
-              <div class="about-feature-icon">💻</div>
-              <span>Strong foundation in <strong>C Programming &amp; Data Structures (DSA)</strong></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neha Yadav — Frontend Developer</title>
+    <link rel="icon" type="image/png" href="Logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <div class="nav-logo">NY.</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <div class="snap-container" id="snapContainer">
+      <!-- ══ HOME ══ -->
+      <section class="snap-section" id="home">
+        <div class="hero-bg"></div>
+        <svg
+          class="hero-wave"
+          viewBox="0 0 800 600"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 300 Q200 100 400 300 Q600 500 800 300"
+            stroke="url(#grad1)"
+            stroke-width="1.5"
+            fill="none"
+            opacity="0.6"
+          />
+          <path
+            d="M0 350 Q200 150 400 350 Q600 550 800 350"
+            stroke="url(#grad1)"
+            stroke-width="1"
+            fill="none"
+            opacity="0.4"
+          />
+          <path
+            d="M0 400 Q200 200 400 400 Q600 600 800 400"
+            stroke="url(#grad1)"
+            stroke-width="0.8"
+            fill="none"
+            opacity="0.3"
+          />
+          <path
+            d="M0 250 Q200 50 400 250 Q600 450 800 250"
+            stroke="url(#grad2)"
+            stroke-width="1.2"
+            fill="none"
+            opacity="0.5"
+          />
+          <defs>
+            <linearGradient id="grad1" x1="0" y1="0" x2="800" y2="0">
+              <stop offset="0%" stop-color="#a855f7" />
+              <stop offset="100%" stop-color="#ec4899" />
+            </linearGradient>
+            <linearGradient id="grad2" x1="0" y1="0" x2="800" y2="0">
+              <stop offset="0%" stop-color="#38bdf8" />
+              <stop offset="100%" stop-color="#a855f7" />
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <div class="hero-inner">
+          <div>
+            <div class="badge animate">Available for Internships</div>
+            <h1 class="hero-greeting animate delay-1">
+              Hello, I'm<br /><span>Neha Yadav</span>
+            </h1>
+            <div class="hero-roles animate delay-2">
+              <div class="hero-role">Frontend Developer</div>
+              <div class="hero-role">Full Stack Enthusiast</div>
+              <div class="hero-role">Tech Club Coordinator</div>
             </div>
-            <div class="about-feature-row">
-              <div class="about-feature-icon">🎯</div>
-              <span>Passionate about <strong>Frontend Development</strong> &amp; Problem Solving</span>
-            </div>
-            <div class="about-feature-row">
-              <div class="about-feature-icon">📱</div>
-              <span>Skilled in building <strong>responsive</strong> and <strong>interactive</strong> web interfaces</span>
-            </div>
-            <div class="about-feature-row">
-              <div class="about-feature-icon">👥</div>
-              <span>Active member of <a href="#experience"><strong>CodeGenX</strong></a>, DIT University</span>
-            </div>
-            <div class="about-feature-row">
-              <div class="about-feature-icon">🏆</div>
-              <span>Contributed to organizing national-level hackathon <a href="#experience"><strong>CodeStorm</strong></a></span>
+            <p class="hero-desc animate delay-3">
+              B.Tech CSE student at DIT University building clean, responsive,
+              user-friendly web interfaces with HTML, CSS, JavaScript and
+              growing into full-stack development.
+            </p>
+            <div class="hero-btns animate delay-4">
+              <!-- ✏️ CHANGE 1: Download Resume fixed — update "Neha_Yadav_Resume.pdf" to your actual file name -->
+              <a
+                href="Neha_Yadav_Resume...pdf"
+                download="Neha_Yadav_Resume...pdf"
+                class="btn-primary"
+              >
+                ⬇ Download Resume
+              </a>
+              <a href="#contact" class="btn-outline">Get In Touch</a>
             </div>
           </div>
- 
-          <p style="margin-bottom:1rem;">I enjoy turning ideas into <strong style="color:var(--accent3);">real-world applications</strong> and continuously improving my skills through hands-on projects and challenges.</p>
- 
-          <!-- Stats bar -->
-          <div class="about-stats">
-            <div class="about-stat">
-              <div class="about-stat-icon">🏆</div>
-              <div class="about-stat-num">1<span>+</span></div>
-              <div class="about-stat-label">Hackathons Organized</div>
+
+          <div class="hero-photo-area animate delay-2">
+            <div class="hero-photo-glow"></div>
+            <div class="hero-photo-frame">
+              <!-- ✏️ TO ADD YOUR PHOTO -->
+              <img
+                src="portfolio_image.png"
+                alt="Neha Yadav"
+                class="hero-photo"
+              />
             </div>
-            <div class="about-stat">
-              <div class="about-stat-icon">💻</div>
-              <div class="about-stat-num">5<span>+</span></div>
-              <div class="about-stat-label">Projects Built</div>
-            </div>
-            <div class="about-stat">
-              <div class="about-stat-icon">🚀</div>
-              <div class="about-stat-num">200<span>+</span></div>
-              <div class="about-stat-label">DSA Problems Solved</div>
-            </div>
-          </div>
- 
-          <div class="about-actions">
-            <a href="Neha_Yadav_Resume...pdf" download="Neha_Yadav_Resume...pdf" class="btn-primary">⬇ Download Resume</a>
-            <a href="#projects" class="btn-outline" id="viewProjectsBtn">View Projects ↗</a>
           </div>
         </div>
- 
-        <!-- RIGHT — info card -->
-        <div>
-          <div class="about-info-card">
-            <div class="about-info-header">
-              <div class="about-avatar">NY</div>
-              <div class="about-info-header-text">
-                <h4>Neha Yadav</h4>
-                <p>Frontend Developer · DIT University</p>
+      </section>
+
+      <!-- ══ ABOUT (REDESIGNED) ══ -->
+      <section class="snap-section" id="about">
+        <div class="section-inner">
+          <div class="section-label">01 — Who I Am</div>
+          <div
+            class="section-title"
+            style="
+              font-family: &quot;Syne&quot;, sans-serif;
+              font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+              font-weight: 800;
+              letter-spacing: -0.03em;
+              margin-bottom: 0.3rem;
+            "
+          >
+            Who I
+            <span
+              style="
+                background: linear-gradient(
+                  135deg,
+                  var(--accent),
+                  var(--accent2)
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+              >Am</span
+            >
+          </div>
+          <p
+            style="
+              color: var(--muted);
+              font-size: 0.85rem;
+              margin-bottom: 0.5rem;
+              max-width: 520px;
+            "
+          >
+            A driven developer focused on building intuitive, high-performance
+            web experiences with clean code and
+            <a
+              href="#projects"
+              style="color: var(--accent); text-decoration: none"
+              >great user experience</a
+            >.
+          </p>
+          <div class="about-divider"></div>
+
+          <div class="about-layout">
+            <!-- LEFT -->
+            <div class="about-left">
+              <p>
+                I'm a B.Tech Computer Science student with a strong interest in
+                <strong>Frontend Development</strong> and problem-solving
+                through
+                <strong style="color: var(--accent)">C Programming</strong> and
+                <strong style="color: var(--accent)">DSA</strong>. I enjoy
+                creating clean, responsive, and
+                <strong style="color: var(--accent3)">user-friendly</strong> web
+                interfaces.
+              </p>
+
+              <div class="about-features-list">
+                <div class="about-feature-row">
+                  <div class="about-feature-icon">💻</div>
+                  <span
+                    >Strong foundation in
+                    <strong
+                      >C Programming &amp; Data Structures (DSA)</strong
+                    ></span
+                  >
+                </div>
+                <div class="about-feature-row">
+                  <div class="about-feature-icon">🎯</div>
+                  <span
+                    >Passionate about
+                    <strong>Frontend Development</strong> &amp; Problem
+                    Solving</span
+                  >
+                </div>
+                <div class="about-feature-row">
+                  <div class="about-feature-icon">📱</div>
+                  <span
+                    >Skilled in building <strong>responsive</strong> and
+                    <strong>interactive</strong> web interfaces</span
+                  >
+                </div>
+                <div class="about-feature-row">
+                  <div class="about-feature-icon">👥</div>
+                  <span
+                    >Active member of
+                    <a href="#experience"><strong>CodeGenX</strong></a
+                    >, DIT University</span
+                  >
+                </div>
+                <div class="about-feature-row">
+                  <div class="about-feature-icon">🏆</div>
+                  <span
+                    >Contributed to organizing national-level hackathon
+                    <a href="#experience"><strong>CodeStorm</strong></a></span
+                  >
+                </div>
+              </div>
+
+              <p style="margin-bottom: 1rem">
+                I enjoy turning ideas into
+                <strong style="color: var(--accent3)"
+                  >real-world applications</strong
+                >
+                and continuously improving my skills through hands-on projects
+                and challenges.
+              </p>
+
+              <!-- Stats bar -->
+              <div class="about-stats">
+                <div class="about-stat">
+                  <div class="about-stat-icon">🏆</div>
+                  <div class="about-stat-num">1<span>+</span></div>
+                  <div class="about-stat-label">Hackathons Organized</div>
+                </div>
+                <div class="about-stat">
+                  <div class="about-stat-icon">💻</div>
+                  <div class="about-stat-num">5<span>+</span></div>
+                  <div class="about-stat-label">Projects Built</div>
+                </div>
+                <div class="about-stat">
+                  <div class="about-stat-icon">🚀</div>
+                  <div class="about-stat-num">200<span>+</span></div>
+                  <div class="about-stat-label">DSA Problems Solved</div>
+                </div>
+              </div>
+
+              <div class="about-actions">
+                <a
+                  href="Neha_Yadav_Resume...pdf"
+                  download="Neha_Yadav_Resume...pdf"
+                  class="btn-primary"
+                  >⬇ Download Resume</a
+                >
+                <a href="#projects" class="btn-outline" id="viewProjectsBtn"
+                  >View Projects ↗</a
+                >
               </div>
             </div>
-            <div class="about-info-rows">
-              <div class="about-info-row">
-                <div class="about-info-row-icon">👤</div>
-                <div>
-                  <div class="about-info-row-label">Full Name</div>
-                  <div class="about-info-row-val">Neha Yadav</div>
+
+            <!-- RIGHT — info card -->
+            <div>
+              <div class="about-info-card">
+                <div class="about-info-header">
+                  <div class="about-avatar">NY</div>
+                  <div class="about-info-header-text">
+                    <h4>Neha Yadav</h4>
+                    <p>Frontend Developer · DIT University</p>
+                  </div>
                 </div>
-              </div>
-              <div class="about-info-row">
-                <div class="about-info-row-icon">📍</div>
-                <div>
-                  <div class="about-info-row-label">Location</div>
-                  <div class="about-info-row-val">Delhi, India</div>
-                </div>
-              </div>
-              <div class="about-info-row">
-                <div class="about-info-row-icon">📧</div>
-                <div>
-                  <div class="about-info-row-label">Email</div>
-                  <div class="about-info-row-val"><a href="mailto:nehayadav140805@gmail.com">nehayadav140805@gmail.com</a></div>
-                </div>
-              </div>
-              <div class="about-info-row">
-                <div class="about-info-row-icon">💼</div>
-                <div>
-                  <div class="about-info-row-label">LinkedIn</div>
-                  <div class="about-info-row-val">
-                    <a href="https://www.linkedin.com/in/neha-yadav-n123" target="_blank">linkedin.com/in/neha-yadav-n123</a>
+                <div class="about-info-rows">
+                  <div class="about-info-row">
+                    <div class="about-info-row-icon">👤</div>
+                    <div>
+                      <div class="about-info-row-label">Full Name</div>
+                      <div class="about-info-row-val">Neha Yadav</div>
+                    </div>
+                  </div>
+                  <div class="about-info-row">
+                    <div class="about-info-row-icon">📍</div>
+                    <div>
+                      <div class="about-info-row-label">Location</div>
+                      <div class="about-info-row-val">Delhi, India</div>
+                    </div>
+                  </div>
+                  <div class="about-info-row">
+                    <div class="about-info-row-icon">📧</div>
+                    <div>
+                      <div class="about-info-row-label">Email</div>
+                      <div class="about-info-row-val">
+                        <a href="mailto:nehayadav140805@gmail.com"
+                          >nehayadav140805@gmail.com</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="about-info-row">
+                    <div class="about-info-row-icon">💼</div>
+                    <div>
+                      <div class="about-info-row-label">LinkedIn</div>
+                      <div class="about-info-row-val">
+                        <a
+                          href="https://www.linkedin.com/in/neha-yadav-n123"
+                          target="_blank"
+                          >linkedin.com/in/neha-yadav-n123</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="about-info-row">
+                    <div class="about-info-row-icon">🎓</div>
+                    <div>
+                      <div class="about-info-row-label">University</div>
+                      <div class="about-info-row-val">
+                        DIT University, Dehradun
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="about-info-row">
-                <div class="about-info-row-icon">🎓</div>
-                <div>
-                  <div class="about-info-row-label">University</div>
-                  <div class="about-info-row-val">DIT University, Dehradun</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ SKILLS ══ -->
+      <section class="snap-section" id="skills">
+        <div class="section-inner">
+          <div class="skills-header-fancy">
+            <div class="tools-label">— My Favorite Tools —</div>
+            <div class="tools-title">Tools That Transform</div>
+            <div class="tools-subtitle">Ideas into Interfaces</div>
+            <div class="tools-tagline">
+              Learned by coding <strong>all night</strong> and debugging all
+              day!
+            </div>
+            <div class="tools-desc">
+              As a budding web developer, I specialize in building responsive
+              and dynamic web applications using modern tools and frameworks.
+              Below are the technologies I work with:
+            </div>
+          </div>
+          <div class="skills-pills-wrap">
+            <div class="skills-row">
+              <div class="skill-pill-btn">
+                <i class="devicon-c-plain colored"></i> C
+              </div>
+              <div class="skill-pill-btn">
+                <i class="devicon-java-plain colored"></i> Java
+              </div>
+              <div class="skill-pill-btn">
+                <i class="devicon-html5-plain colored"></i> HTML
+              </div>
+              <div class="skill-pill-btn">
+                <i class="devicon-css3-plain colored"></i> CSS
+              </div>
+              <div class="skill-pill-btn">
+                <i class="devicon-javascript-plain colored"></i> JavaScript
+              </div>
+              <div class="skill-pill-btn">
+                <i class="devicon-tailwindcss-plain colored"></i> Tailwind CSS
+              </div>
+            </div>
+            <div class="skills-row">
+              <div class="skill-pill-btn">
+                <i class="devicon-git-plain colored"></i> Git
+              </div>
+              <div class="skill-pill-btn">
+                <i class="devicon-github-original"></i> GitHub
+              </div>
+              <div class="skill-pill-btn">
+                <i class="devicon-canva-original colored"></i> Canva
+              </div>
+              <div class="skill-pill-btn">
+                <i class="devicon-mysql-plain colored"></i> SQL
+              </div>
+              <div class="skill-pill-btn">
+                <i class="devicon-nodejs-plain colored"></i> Node.js
+              </div>
+              <div class="skill-pill-btn">
+                <i class="devicon-express-original"></i> Express
+              </div>
+              <div class="skill-pill-btn">
+                <i class="devicon-mongodb-plain colored"></i> MongoDB
+              </div>
+              <div class="skill-pill-btn">
+                <i class="devicon-react-original colored"></i> React
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ PROJECTS ══ -->
+      <section class="snap-section" id="projects">
+        <div class="section-inner">
+          <div class="projects-header">
+            <div class="section-label">03 — My Work</div>
+            <h2
+              style="
+                font-family: &quot;Syne&quot;, sans-serif;
+                font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+                font-weight: 800;
+                letter-spacing: -0.03em;
+              "
+            >
+              Projects
+            </h2>
+            <p
+              style="
+                color: var(--muted);
+                font-size: 0.88rem;
+                margin-top: 0.2rem;
+                font-style: italic;
+              "
+            >
+              A collection of projects showcasing my frontend development and
+              problem-solving skills.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Calculator -->
+            <div class="project-card">
+              <div class="project-icon-box">🧮</div>
+              <div>
+                <h3>Calculator App | Interactive Tool</h3>
+                <p>
+                  A responsive calculator with smooth UI and real-time
+                  arithmetic operations, built with clean design and
+                  user-friendly interaction.
+                </p>
+                <div class="project-tech">
+                  <strong>Tech:</strong> HTML, CSS, JavaScript
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://calculator-rust-mu-72.vercel.app"
+                    target="_blank"
+                    >Live Demo ↗</a
+                  >
+                  <a
+                    href="https://github.com/neha-yadav2485/CALCULATOR"
+                    target="_blank"
+                    >GitHub ↗</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Weather App -->
+            <div class="project-card">
+              <div class="project-icon-box">🌤️</div>
+              <div>
+                <h3>Weather App | Live API Project</h3>
+                <p>
+                  A dynamic weather application fetching real-time data using
+                  API integration with error handling and responsive UI.
+                </p>
+                <div class="project-tech">
+                  <strong>Tech:</strong> HTML, CSS, JavaScript, API
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://weather-app-five-khaki-unyhqeuxy0.vercel.app"
+                    target="_blank"
+                    >Live Demo ↗</a
+                  >
+                  <a
+                    href="https://github.com/neha-yadav2485/WEATHER-APP"
+                    target="_blank"
+                    >GitHub ↗</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Portfolio -->
+            <div class="project-card">
+              <div class="project-icon-box">👩‍💻</div>
+              <div>
+                <h3>Portfolio Website | Developer Showcase</h3>
+                <p>
+                  A modern and responsive personal portfolio showcasing
+                  projects, skills, and experience with smooth animations and
+                  clean UI.
+                </p>
+                <div class="project-tech">
+                  <strong>Tech:</strong> HTML, CSS, JavaScript
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://portfolio-orcin-kappa-ixn98kty1d.vercel.app"
+                    target="_blank"
+                    >Live Demo ↗</a
+                  >
+                  <a
+                    href="https://github.com/neha-yadav2485/PORTFOLIO"
+                    target="_blank"
+                    >GitHub ↗</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Expense Tracker -->
+            <div class="project-card">
+              <div class="project-icon-box">💰</div>
+              <div>
+                <h3>Expense Tracker | Finance App</h3>
+                <p>
+                  A web app to track income and expenses with add/delete
+                  functionality and real-time balance updates using local
+                  storage.
+                </p>
+                <div class="project-tech">
+                  <strong>Tech:</strong> HTML, CSS, JavaScript
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://expense-tracker-pearl-seven-48.vercel.app"
+                    target="_blank"
+                    >Live Demo ↗</a
+                  >
+                  <a
+                    href="https://github.com/neha-yadav2485/EXPENSE_TRACKER"
+                    target="_blank"
+                    >GitHub ↗</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- E-Commerce -->
+            <div class="project-card">
+              <div class="project-icon-box">🛒</div>
+              <div>
+                <h3>E-Commerce Website | Shopping UI</h3>
+                <p>
+                  A responsive e-commerce frontend with product listings, cart
+                  system, and wishlist functionality focused on UI/UX.
+                </p>
+                <div class="project-tech">
+                  <strong>Tech:</strong> HTML, CSS, JavaScript
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://e-commerce-website-mu-lilac.vercel.app"
+                    target="_blank"
+                    >Live Demo ↗</a
+                  >
+                  <a
+                    href="https://github.com/neha-yadav2485/ECOMMERCE-WEBSITE"
+                    target="_blank"
+                    >GitHub ↗</a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
- 
-  <!-- ══ SKILLS ══ -->
-  <section class="snap-section" id="skills">
-    <div class="section-inner">
-      <div class="skills-header-fancy">
-        <div class="tools-label">— My Favorite Tools —</div>
-        <div class="tools-title">Tools That Transform</div>
-        <div class="tools-subtitle">Ideas into Interfaces</div>
-        <div class="tools-tagline">Learned by coding <strong>all night</strong> and debugging all day!</div>
-        <div class="tools-desc">As a budding web developer, I specialize in building responsive and dynamic web applications using modern tools and frameworks. Below are the technologies I work with:</div>
-      </div>
-      <div class="skills-pills-wrap">
-        <div class="skills-row">
-          <div class="skill-pill-btn"><i class="devicon-c-plain colored"></i> C</div>
-          <div class="skill-pill-btn"><i class="devicon-java-plain colored"></i> Java</div>
-          <div class="skill-pill-btn"><i class="devicon-html5-plain colored"></i> HTML</div>
-          <div class="skill-pill-btn"><i class="devicon-css3-plain colored"></i> CSS</div>
-          <div class="skill-pill-btn"><i class="devicon-javascript-plain colored"></i> JavaScript</div>
-          <div class="skill-pill-btn"><i class="devicon-tailwindcss-plain colored"></i> Tailwind CSS</div>
-        </div>
-        <div class="skills-row">
-          <div class="skill-pill-btn"><i class="devicon-git-plain colored"></i> Git</div>
-          <div class="skill-pill-btn"><i class="devicon-github-original"></i> GitHub</div>
-          <div class="skill-pill-btn"><i class="devicon-canva-original colored"></i> Canva</div>
-          <div class="skill-pill-btn"><i class="devicon-mysql-plain colored"></i> SQL</div>
-          <div class="skill-pill-btn"><i class="devicon-nodejs-plain colored"></i> Node.js</div>
-          <div class="skill-pill-btn"><i class="devicon-express-original"></i> Express</div>
-          <div class="skill-pill-btn"><i class="devicon-mongodb-plain colored"></i> MongoDB</div>
-          <div class="skill-pill-btn"><i class="devicon-react-original colored"></i> React</div>
-        </div>
-      </div>
-    </div>
-  </section>
- 
-<!-- ══ PROJECTS ══ -->
-<section class="snap-section" id="projects">
- <div class="section-inner">
-    <div class="projects-header">
-      <div class="section-label">03 — My Work</div>
-      <h2 style="font-family:'Syne',sans-serif;font-size:clamp(1.6rem,2.8vw,2.2rem);font-weight:800;letter-spacing:-0.03em;">
-        Projects
-      </h2>
-      <p style="color:var(--muted);font-size:0.88rem;margin-top:0.2rem;font-style:italic;">
-        A collection of projects showcasing my frontend development and problem-solving skills.
-      </p>
-    </div>
+      </section>
 
-    <div class="projects-grid">
-
-  <!-- Calculator -->
-  <div class="project-card">
-    <div class="project-icon-box">🧮</div>
-    <div>
-      <h3>Calculator App | Interactive Tool</h3>
-      <p>
-        A responsive calculator with smooth UI and real-time arithmetic operations, built with clean design and user-friendly interaction.
-      </p>
-      <div class="project-tech"><strong>Tech:</strong> HTML, CSS, JavaScript</div>
-
-      <div class="project-links">
-        <a href="https://calculator-rust-mu-72.vercel.app" target="_blank">Live Demo ↗</a>
-        <a href="https://github.com/neha-yadav2485/CALCULATOR" target="_blank">GitHub ↗</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Weather App -->
-  <div class="project-card">
-    <div class="project-icon-box">🌤️</div>
-    <div>
-      <h3>Weather App | Live API Project</h3>
-      <p>
-        A dynamic weather application fetching real-time data using API integration with error handling and responsive UI.
-      </p>
-      <div class="project-tech"><strong>Tech:</strong> HTML, CSS, JavaScript, API</div>
-
-      <div class="project-links">
-        <a href="https://weather-app-five-khaki-unyhqeuxy0.vercel.app" target="_blank">Live Demo ↗</a>
-        <a href="https://github.com/neha-yadav2485/WEATHER-APP" target="_blank">GitHub ↗</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio -->
-  <div class="project-card">
-    <div class="project-icon-box">👩‍💻</div>
-    <div>
-      <h3>Portfolio Website | Developer Showcase</h3>
-      <p>
-        A modern and responsive personal portfolio showcasing projects, skills, and experience with smooth animations and clean UI.
-      </p>
-      <div class="project-tech"><strong>Tech:</strong> HTML, CSS, JavaScript</div>
-
-      <div class="project-links">
-        <a href="https://portfolio-orcin-kappa-ixn98kty1d.vercel.app" target="_blank">Live Demo ↗</a>
-        <a href="https://github.com/neha-yadav2485/PORTFOLIO" target="_blank">GitHub ↗</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Expense Tracker -->
-  <div class="project-card">
-    <div class="project-icon-box">💰</div>
-    <div>
-      <h3>Expense Tracker | Finance App</h3>
-      <p>
-        A web app to track income and expenses with add/delete functionality and real-time balance updates using local storage.
-      </p>
-      <div class="project-tech"><strong>Tech:</strong> HTML, CSS, JavaScript</div>
-
-      <div class="project-links">
-        <a href="https://expense-tracker-pearl-seven-48.vercel.app" target="_blank">Live Demo ↗</a>
-        <a href="https://github.com/neha-yadav2485/EXPENSE_TRACKER" target="_blank">GitHub ↗</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- E-Commerce -->
-  <div class="project-card">
-    <div class="project-icon-box">🛒</div>
-    <div>
-      <h3>E-Commerce Website | Shopping UI</h3>
-      <p>
-        A responsive e-commerce frontend with product listings, cart system, and wishlist functionality focused on UI/UX.
-      </p>
-      <div class="project-tech"><strong>Tech:</strong> HTML, CSS, JavaScript</div>
-
-      <div class="project-links">
-        <a href="https://e-commerce-website-mu-lilac.vercel.app" target="_blank">Live Demo ↗</a>
-        <a href="https://github.com/neha-yadav2485/ECOMMERCE-WEBSITE" target="_blank">GitHub ↗</a>
-      </div>
-    </div>
-  </div>
-
-  </div>
- </div>
-</section>
- 
-  <!-- ══ EXPERIENCE ══ -->
-  <section class="snap-section" id="experience">
-    <div class="section-inner experience-wide">
-      <div class="section-label">04 — My Journey</div>
-      <div class="section-title">Experience</div>
-      <div class="section-sub">Roles and contributions that shaped my technical and leadership skills.</div>
- 
-      <div class="timeline">
- 
-        <!-- 1. Internship (Pinnacle Lab) -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">March 2026 – Present</div>
-          <div class="timeline-content">
-            <h3>Frontend Developer Intern</h3>
-            <div class="org" style="color:var(--accent3);">Pinnacle Lab — Web Development Internship</div>
-            <ul>
-              <li>Developing responsive and user-friendly web applications using HTML, CSS, and JavaScript</li>
-              <li>Working on real-world projects including Portfolio Website and E-Commerce platform</li>
-              <li>Improving UI/UX design skills by implementing modern layouts and interactive components</li>
-              <li>Collaborating on tasks and meeting project deadlines in a structured environment</li>
-            </ul>
-            <div class="exp-tags">
-              <span class="exp-tag">Frontend</span>
-              <span class="exp-tag">UI/UX</span>
-              <span class="exp-tag">Web Development</span>
-            </div>
-            <div style="margin-top:0.6rem;font-size:0.72rem;color:var(--muted);">
-              <strong style="color:var(--muted2);">Tech:</strong> HTML, CSS, JavaScript
-            </div>
+      <!-- ══ EXPERIENCE ══ -->
+      <section class="snap-section" id="experience">
+        <div class="section-inner experience-wide">
+          <div class="section-label">04 — My Journey</div>
+          <div class="section-title">Experience</div>
+          <div class="section-sub">
+            Roles and contributions that shaped my technical and leadership
+            skills.
           </div>
-        </div>
- 
-        <!-- 2. Open Source Contributor (Elite Coders)  -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Jan. 2026 – March 2026</div>
-          <div class="timeline-content">
-            <h3>🐙 Open Source Contributor · Elite Coders</h3>
-            <div class="org" style="color:var(--accent3);">Elite Coders — Open Source Organization</div>
-            <ul>
-              <li>Contributed to Elite Coders, an open-source organization, working on various open-source projects and collaborating with the developer community</li>
-              <li>Worked on real-world repositories using HTML, CSS, JavaScript and Tailwind</li>
-              <li>Improved code quality, fixed issues and enhanced UI components</li>
-            </ul>
-            <div class="exp-tags">
-              <span class="exp-tag">Open Source</span>
-              <span class="exp-tag">GitHub</span>
-              <span class="exp-tag">Collaboration</span>
-            </div>
-            <div style="margin-top:0.6rem;font-size:0.72rem;color:var(--muted);">
-              <strong style="color:var(--muted2);">Tech:</strong> HTML, CSS, JavaScript, Tailwind CSS, SQL
-            </div>
-          </div>
-        </div>
 
-        <!-- 3. Coordinator (latest) -->
-        <div class="timeline-item">
-          <div class="timeline-dot latest"></div>
-          <div class="timeline-date">Feb 2026 – Present</div>
-          <div class="timeline-content latest-card">
-            <h3>2nd Year Coordinator <span class="latest-badge">Latest</span></h3>
-            <div class="org">CodeGenX DITU — Official Tech Club</div>
-            <ul>
-              <li>Led execution of CodeStorm, a national-level hackathon with 100+ participants</li>
-              <li>Organized and managed 5+ technical workshops, increasing student participation by 30%</li>
-              <li>Coordinated a team of 10+ members for smooth event operations</li>
-            </ul>
-            <div class="exp-tags"><span class="exp-tag">Leadership</span><span class="exp-tag">Mentoring</span><span class="exp-tag">Event Management</span></div>
-          </div>
-        </div>
-
-        <!-- 4. Club Member -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Apr 2025 – Feb 2026</div>
-          <div class="timeline-content">
-            <h3>Club Member</h3>
-            <div class="org">CodeGenX DITU — Official Tech Club</div>
-            <ul>
-              <li>Assisted in organizing technical events and workshops for 200+ students</li>
-              <li>Contributed to organizing CodeStorm — a national-level hackathon</li>
-              <li>Supported logistics, coordination, and communication within the team</li>
-            </ul>
-            <div class="exp-tags"><span class="exp-tag">Teamwork</span><span class="exp-tag">Hackathon</span><span class="exp-tag">Workshops</span></div>
-          </div>
-        </div>
- 
-      </div>
-    </div>
-  </section>
- 
-  <!-- ══ EDUCATION ══ -->
-  <section class="snap-section" id="education">
-    <div class="section-inner">
-      <div class="section-label">05 — My Learning</div>
-      <div class="section-title">Education</div>
-      <div class="edu-grid">
-        <div class="edu-card">
-          <div class="edu-icon">🎓</div>
-          <h3>DIT University, Dehradun</h3>
-          <div class="degree">Bachelor of Technology — Computer Science</div>
-          <div class="year">Aug 2024 – May 2028 (Expected) · CGPA: 8.7/10</div>
-          <p>Pursuing B.Tech with focus on programming, web development and software engineering.</p>
-        </div>
-        <div class="edu-card">
-          <div class="edu-icon">🏫</div>
-          <h3>Higher Secondary Education (12th)</h3>
-          <div class="degree">AECS — Atomic Energy Central School</div>
-          <div class="year">Scored 85%</div>
-          <p>Science stream with strong foundation in Information Technology and Mathematics.</p>
-        </div>
-        <div class="edu-card">
-          <div class="edu-icon">📘</div>
-          <h3>Secondary Education (10th)</h3>
-          <div class="degree">AECS — Atomic Energy Central School</div>
-          <div class="year">Scored 92%</div>
-          <p>Strong academic performance and assisted peers in computer lab sessions.</p>
-        </div>
-      </div>
-    </div>
-  </section>
- 
-  <!-- ══ CONTACT ══ -->
-  <section class="snap-section" id="contact">
-    <div class="section-inner">
-      <div class="section-label">06 — Let's Connect</div>
-      <div class="section-title">Get In Touch</div>
-      <div class="section-sub">Looking for frontend internship opportunities. Feel free to reach out — I'd love to connect!</div>
-      <div class="contact-wrapper">
-        <div>
-          <p style="color:var(--muted);line-height:1.7;margin-bottom:0.8rem;font-size:0.9rem;">I'm actively seeking <strong style="color:var(--accent)">Frontend Developer internships</strong> where I can learn, contribute, and grow. Whether you have an opportunity or just want to say hello — my inbox is always open.</p>
-          <div class="contact-links">
-            <a href="mailto:nehayadav140805@gmail.com" class="contact-link">
-              <div class="contact-link-icon">✉️</div>
-              <div><h4>Email Me</h4><p>nehayadav140805@gmail.com</p></div>
-            </a>
-            <a href="https://www.linkedin.com/in/neha-yadav-n123" target="_blank" class="contact-link">
-              <div class="contact-link-icon">💼</div>
-              <div><h4>LinkedIn</h4><p>linkedin.com/in/neha-yadav-n123</p></div>
-            </a>
-            <a href="https://github.com/neha-yadav2485" target="_blank" class="contact-link">
-              <div class="contact-link-icon">🐙</div>
-              <div>
-                <h4>GitHub</h4>
-                <p>github.com/neha-yadav2485</p>
+          <div class="timeline">
+            <!-- 1. Internship (Pinnacle Lab) -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">March 2026 – Present</div>
+              <div class="timeline-content">
+                <h3>Frontend Developer Intern</h3>
+                <div class="org" style="color: var(--accent3)">
+                  Pinnacle Lab — Web Development Internship
+                </div>
+                <ul>
+                  <li>
+                    Developing responsive and user-friendly web applications
+                    using HTML, CSS, and JavaScript
+                  </li>
+                  <li>
+                    Working on real-world projects including Portfolio Website
+                    and E-Commerce platform
+                  </li>
+                  <li>
+                    Improving UI/UX design skills by implementing modern layouts
+                    and interactive components
+                  </li>
+                  <li>
+                    Collaborating on tasks and meeting project deadlines in a
+                    structured environment
+                  </li>
+                </ul>
+                <div class="exp-tags">
+                  <span class="exp-tag">Frontend</span>
+                  <span class="exp-tag">UI/UX</span>
+                  <span class="exp-tag">Web Development</span>
+                </div>
+                <div
+                  style="
+                    margin-top: 0.6rem;
+                    font-size: 0.72rem;
+                    color: var(--muted);
+                  "
+                >
+                  <strong style="color: var(--muted2)">Tech:</strong> HTML, CSS,
+                  JavaScript
+                </div>
               </div>
-            </a>
+            </div>
+
+            <!-- 2. Open Source Contributor (Elite Coders)  -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Jan. 2026 – March 2026</div>
+              <div class="timeline-content">
+                <h3>🐙 Open Source Contributor · Elite Coders</h3>
+                <div class="org" style="color: var(--accent3)">
+                  Elite Coders — Open Source Organization
+                </div>
+                <ul>
+                  <li>
+                    Contributed to Elite Coders, an open-source organization,
+                    working on various open-source projects and collaborating
+                    with the developer community
+                  </li>
+                  <li>
+                    Worked on real-world repositories using HTML, CSS,
+                    JavaScript and Tailwind
+                  </li>
+                  <li>
+                    Improved code quality, fixed issues and enhanced UI
+                    components
+                  </li>
+                </ul>
+                <div class="exp-tags">
+                  <span class="exp-tag">Open Source</span>
+                  <span class="exp-tag">GitHub</span>
+                  <span class="exp-tag">Collaboration</span>
+                </div>
+                <div
+                  style="
+                    margin-top: 0.6rem;
+                    font-size: 0.72rem;
+                    color: var(--muted);
+                  "
+                >
+                  <strong style="color: var(--muted2)">Tech:</strong> HTML, CSS,
+                  JavaScript, Tailwind CSS, SQL
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Coordinator (latest) -->
+            <div class="timeline-item">
+              <div class="timeline-dot latest"></div>
+              <div class="timeline-date">Feb 2026 – Present</div>
+              <div class="timeline-content latest-card">
+                <h3>
+                  2nd Year Coordinator <span class="latest-badge">Latest</span>
+                </h3>
+                <div class="org">CodeGenX DITU — Official Tech Club</div>
+                <ul>
+                  <li>
+                    Led execution of CodeStorm, a national-level hackathon with
+                    100+ participants
+                  </li>
+                  <li>
+                    Organized and managed 5+ technical workshops, increasing
+                    student participation by 30%
+                  </li>
+                  <li>
+                    Coordinated a team of 10+ members for smooth event
+                    operations
+                  </li>
+                </ul>
+                <div class="exp-tags">
+                  <span class="exp-tag">Leadership</span
+                  ><span class="exp-tag">Mentoring</span
+                  ><span class="exp-tag">Event Management</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Club Member -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Apr 2025 – Feb 2026</div>
+              <div class="timeline-content">
+                <h3>Club Member</h3>
+                <div class="org">CodeGenX DITU — Official Tech Club</div>
+                <ul>
+                  <li>
+                    Assisted in organizing technical events and workshops for
+                    200+ students
+                  </li>
+                  <li>
+                    Contributed to organizing CodeStorm — a national-level
+                    hackathon
+                  </li>
+                  <li>
+                    Supported logistics, coordination, and communication within
+                    the team
+                  </li>
+                </ul>
+                <div class="exp-tags">
+                  <span class="exp-tag">Teamwork</span
+                  ><span class="exp-tag">Hackathon</span
+                  ><span class="exp-tag">Workshops</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        
-        <!-- Formspree Form -->
-        <form id="contact-form" class="contact-form" novalidate>
-          <div class="form-row">
-            <div class="form-group">
-               <label for="name">YOUR NAME</label>
-              <input type="text" id="name" name="name" placeholder="John Doe" required>
+      </section>
+
+      <!-- ══ EDUCATION ══ -->
+      <section class="snap-section" id="education">
+        <div class="section-inner">
+          <div class="section-label">05 — My Learning</div>
+          <div class="section-title">Education</div>
+          <div class="edu-grid">
+            <div class="edu-card">
+              <div class="edu-icon">🎓</div>
+              <h3>DIT University, Dehradun</h3>
+              <div class="degree">
+                Bachelor of Technology — Computer Science
+              </div>
+              <div class="year">
+                Aug 2024 – May 2028 (Expected) · CGPA: 8.7/10
+              </div>
+              <p>
+                Pursuing B.Tech with focus on programming, web development and
+                software engineering.
+              </p>
+            </div>
+            <div class="edu-card">
+              <div class="edu-icon">🏫</div>
+              <h3>Higher Secondary Education (12th)</h3>
+              <div class="degree">AECS — Atomic Energy Central School</div>
+              <div class="year">Scored 85%</div>
+              <p>
+                Science stream with strong foundation in Information Technology
+                and Mathematics.
+              </p>
+            </div>
+            <div class="edu-card">
+              <div class="edu-icon">📘</div>
+              <h3>Secondary Education (10th)</h3>
+              <div class="degree">AECS — Atomic Energy Central School</div>
+              <div class="year">Scored 92%</div>
+              <p>
+                Strong academic performance and assisted peers in computer lab
+                sessions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ CONTACT ══ -->
+      <section class="snap-section" id="contact">
+        <div class="section-inner">
+          <div class="section-label">06 — Let's Connect</div>
+          <div class="section-title">Get In Touch</div>
+          <div class="section-sub">
+            Looking for frontend internship opportunities. Feel free to reach
+            out — I'd love to connect!
+          </div>
+          <div class="contact-wrapper">
+            <div>
+              <p
+                style="
+                  color: var(--muted);
+                  line-height: 1.7;
+                  margin-bottom: 0.8rem;
+                  font-size: 0.9rem;
+                "
+              >
+                I'm actively seeking
+                <strong style="color: var(--accent)"
+                  >Frontend Developer internships</strong
+                >
+                where I can learn, contribute, and grow. Whether you have an
+                opportunity or just want to say hello — my inbox is always open.
+              </p>
+              <div class="contact-links">
+                <a href="mailto:nehayadav140805@gmail.com" class="contact-link">
+                  <div class="contact-link-icon">✉️</div>
+                  <div>
+                    <h4>Email Me</h4>
+                    <p>nehayadav140805@gmail.com</p>
+                  </div>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/neha-yadav-n123"
+                  target="_blank"
+                  class="contact-link"
+                >
+                  <div class="contact-link-icon">💼</div>
+                  <div>
+                    <h4>LinkedIn</h4>
+                    <p>linkedin.com/in/neha-yadav-n123</p>
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/neha-yadav2485"
+                  target="_blank"
+                  class="contact-link"
+                >
+                  <div class="contact-link-icon">🐙</div>
+                  <div>
+                    <h4>GitHub</h4>
+                    <p>github.com/neha-yadav2485</p>
+                  </div>
+                </a>
+              </div>
             </div>
 
-            <div class="form-group">
-              <label for="email">YOUR EMAIL</label>
-              <input type="email" id="email" name="email" placeholder="john@company.com" required>
-            </div>
+            <!-- Formspree Form -->
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">YOUR NAME</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">YOUR EMAIL</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="john@company.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">SUBJECT</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Internship Opportunity"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">MESSAGE</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Hi Neha, I'd love to discuss an opportunity with you..."
+                  required
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="btn-primary"
+                style="width: 100%; justify-content: center"
+              >
+                Send Message ✈
+              </button>
+
+              <p
+                id="form-status"
+                style="
+                  margin-top: 12px;
+                  font-size: 0.95rem;
+                  color: var(--muted);
+                "
+              ></p>
+            </form>
           </div>
+        </div>
+      </section>
 
-          <div class="form-group">
-            <label for="subject">SUBJECT</label>
-            <input type="text" id="subject" name="subject" placeholder="Internship Opportunity" required>
-          </div>
-
-          <div class="form-group">
-            <label for="message">MESSAGE</label>
-            <textarea id="message" name="message" placeholder="Hi Neha, I'd love to discuss an opportunity with you..." required></textarea>
-          </div>
-
-          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">
-            Send Message ✈
-          </button>
-
-          <p id="form-status" style="margin-top:12px;font-size:0.95rem;color:var(--muted);"></p>
-        </form>
-
-      </div>
+      <!-- FOOTER -->
+      <footer>
+        <div>
+          <span class="footer-brand">Neha Yadav</span>
+          <span style="margin-left: 1rem"
+            >— Frontend Developer · DIT University</span
+          >
+        </div>
+        <div>Designed &amp; Built with ❤️ · © 2025</div>
+      </footer>
     </div>
-  </section>
- 
-  <!-- FOOTER -->
-  <footer>
-    <div>
-      <span class="footer-brand">Neha Yadav</span>
-      <span style="margin-left:1rem;">— Frontend Developer · DIT University</span>
-    </div>
-    <div>Designed &amp; Built with ❤️ · © 2025</div>
-  </footer>
- 
-</div><!-- end snap-container -->
+    <!-- end snap-container -->
 
-<div id="toast" class="toast">Message sent successfully!</div>
- 
-<script src="script.js"></script>
-</body>
+    <div id="toast" class="toast">Message sent successfully!</div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
